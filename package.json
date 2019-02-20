@@ -1,0 +1,28 @@
+{
+   "name": "pledge-green",
+   "version": "1.0.0",
+   "description": "Project to promote green policies in UK politics",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "copy-static": "cp node_modules/bootstrap/dist/css/* static",
+      "start": "npm run copy-static && ts-node src/index.ts",
+      "debug": "npm run copy-static && nodemon"
+   },
+   "author": "Ben Ockmore",
+   "license": "GPL-3.0-or-later",
+   "dependencies": {
+      "bootstrap": "^4.3.1",
+      "handlebars": "^4.1.0",
+      "koa": "^2.7.0",
+      "reflect-metadata": "^0.1.10",
+      "sqlite3": "^4.0.6",
+      "typeorm": "0.2.13"
+   },
+   "devDependencies": {
+      "@types/node": "^11.9.4",
+      "nodemon": "^1.18.10",
+      "ts-node": "8.0.2",
+      "typescript": "3.3.3"
+   }
+}
